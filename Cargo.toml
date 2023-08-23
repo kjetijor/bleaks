@@ -1,5 +1,5 @@
 [package]
-name = "nrf-sensor"
+name = "bleaks"
 version = "0.1.0"
 edition = "2021"
 
@@ -21,6 +21,7 @@ overflow-checks = false
 
 [features]
 default = ["ble-l2cap", "ble-gatt-server", "ble-gatt-client", "ble-sec"]
+highpower = []
 
 ble-l2cap = ["nrf-softdevice/ble-l2cap"]
 ble-gatt-server = ["nrf-softdevice/ble-gatt-server"]

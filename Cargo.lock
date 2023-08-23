@@ -112,6 +112,32 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b4682ae6287fcf752ecaabbfcc7b6f9b72aa33933dc23a554d853aea8eea8635"
 
 [[package]]
+name = "bleaks"
+version = "0.1.0"
+dependencies = [
+ "atomic-polyfill 1.0.2",
+ "atomic-pool",
+ "bitflags 2.4.0",
+ "cortex-m",
+ "cortex-m-rt",
+ "defmt",
+ "defmt-rtt",
+ "embassy-executor",
+ "embassy-nrf",
+ "embassy-sync 0.2.0 (git+https://github.com/embassy-rs/embassy?rev=99b4ea7)",
+ "embassy-time",
+ "embedded-storage",
+ "embedded-storage-async",
+ "fixed",
+ "futures",
+ "heapless",
+ "nrf-softdevice",
+ "nrf-softdevice-s140",
+ "panic-probe",
+ "static_cell",
+]
+
+[[package]]
 name = "bytemuck"
 version = "1.13.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -657,32 +683,6 @@ name = "nb"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8d5439c4ad607c3c23abf66de8c8bf57ba8adcd1f129e699851a6e43935d339d"
-
-[[package]]
-name = "nrf-sensor"
-version = "0.1.0"
-dependencies = [
- "atomic-polyfill 1.0.2",
- "atomic-pool",
- "bitflags 2.4.0",
- "cortex-m",
- "cortex-m-rt",
- "defmt",
- "defmt-rtt",
- "embassy-executor",
- "embassy-nrf",
- "embassy-sync 0.2.0 (git+https://github.com/embassy-rs/embassy?rev=99b4ea7)",
- "embassy-time",
- "embedded-storage",
- "embedded-storage-async",
- "fixed",
- "futures",
- "heapless",
- "nrf-softdevice",
- "nrf-softdevice-s140",
- "panic-probe",
- "static_cell",
-]
 
 [[package]]
 name = "nrf-softdevice"
